@@ -163,8 +163,9 @@ header {
 }
 
 .profile-photo {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -203,14 +204,111 @@ header {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .site-title {
+        font-size: 1.7em;
+    }
+
     .profile-container {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .profile-image {
         flex: 0 0 auto;
-        max-width: 250px;
-        margin-bottom: 20px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .profile-content {
+        text-align: center;
+    }
+
+    .current-status {
+        text-align: left;
+    }
+
+    nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 0;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .site-title {
+        font-size: 1.5em;
+    }
+
+    .profile-image {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .intro-text, .personal-touch {
+        font-size: 1em;
+    }
+
+    .project-item, .experience-item, .education-item {
+        padding: 10px 0;
+    }
+
+    .project-details {
+        padding-left: 15px;
+    }
+
+    .contact-info, .reference-item {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        max-width: 90%;
+    }
+
+    .profile-container {
+        gap: 30px;
+    }
+
+    .profile-image {
+        flex: 0 0 250px;
+    }
+}
+
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav, .profile-photo {
+        display: none;
+    }
+
+    .section {
+        page-break-inside: avoid;
     }
 } 
