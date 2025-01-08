@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abdullah Faruk Çiftler Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Abdullah Faruk Çiftler</h1>
+    </header>
+    
+    <nav>
+        <a href="/" class="<%= page === 'home' ? 'active' : '' %>">Ana Sayfa</a>
+        <a href="/experience" class="<%= page === 'experience' ? 'active' : '' %>">Deneyim</a>
+        <a href="/education" class="<%= page === 'education' ? 'active' : '' %>">Eğitim</a>
+        <a href="/skills" class="<%= page === 'skills' ? 'active' : '' %>">Yetenekler</a>
+        <a href="/projects" class="<%= page === 'projects' ? 'active' : '' %>">Projeler</a>
+        <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">İletişim</a>
+    </nav>
+    
+    <main>
+        <%- body %>
+    </main>
+</body>
+</html> 
