@@ -11,21 +11,29 @@ nav {
     margin-bottom: 20px;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
-    margin-right: 15px;
+    padding: 8px 15px;
     text-decoration: none;
     color: #333;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
 nav a:hover {
-    color: #666;
+    background-color: #f5f5f5;
+    color: #000;
 }
 
 nav a.active {
     font-weight: bold;
     color: #000;
+    background-color: #f0f0f0;
 }
 
 h1, h2 {
@@ -160,6 +168,7 @@ header {
 
 .profile-image {
     flex: 0 0 300px;
+    transition: all 0.3s ease;
 }
 
 .profile-photo {
@@ -168,7 +177,7 @@ header {
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .profile-photo:hover {
@@ -216,13 +225,18 @@ header {
     .profile-container {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
     }
 
     .profile-image {
         flex: 0 0 auto;
-        width: 80%;
-        max-width: 300px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
     }
 
     .profile-content {
@@ -234,15 +248,17 @@ header {
     }
 
     nav {
+        justify-content: center;
         overflow-x: auto;
-        white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        padding: 10px 0;
+        padding: 5px 0;
+        gap: 5px;
     }
 
     nav a {
-        display: inline-block;
-        padding: 5px 10px;
+        padding: 8px 12px;
+        white-space: nowrap;
+        font-size: 0.9em;
     }
 }
 
@@ -282,6 +298,15 @@ header {
     .contact-info, .reference-item {
         padding: 10px;
     }
+
+    .profile-image {
+        max-width: 200px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -295,6 +320,11 @@ header {
 
     .profile-image {
         flex: 0 0 250px;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
     }
 }
 
