@@ -146,4 +146,71 @@ header {
 .project-link:hover {
     text-decoration: underline;
     color: #333;
+}
+
+.profile-section {
+    margin-top: 30px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    flex: 0 0 300px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.02);
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.personal-touch {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.current-status {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.current-status p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        flex: 0 0 auto;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
 } 
