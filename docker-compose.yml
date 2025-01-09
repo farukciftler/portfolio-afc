@@ -18,7 +18,10 @@ services:
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   portfolio:
-    build: .
+    build:
+      context: .
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date +%Y%m%d_%H%M%S)}
     container_name: portfolio
     restart: always
     environment:
