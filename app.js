@@ -38,6 +38,10 @@ app.get('/projects', (req, res) => {
     res.render('pages/projects', { page: 'projects' });
 });
 
+app.get('/articles', (req, res) => {
+    res.render('pages/articles', { page: 'articles' });
+});
+
 app.listen(port, () => {
     console.log(`Portfolyo sitesi http://localhost:${port} adresinde çalışıyor`);
 }); 
