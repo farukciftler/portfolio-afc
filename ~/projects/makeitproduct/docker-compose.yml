@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  makeitproduct:
+    build:
+      context: .
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date +%Y%m%d_%H%M%S)}
+    container_name: makeitproduct
+    restart: always
+    environment:
+      - NODE_ENV=production
+    networks:
+      - makeitproduct_network
+
+networks:
+  makeitproduct_network:
+    name: makeitproduct_network 
