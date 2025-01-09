@@ -13,6 +13,7 @@ services:
       - ./nginx/certbot/www:/var/www/certbot
     depends_on:
       - portfolio
+      - makeitproduct
     networks:
       - app-network
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
@@ -23,6 +24,18 @@ services:
       args:
         BUILD_DATE: ${BUILD_DATE:-$(date +%Y%m%d_%H%M%S)}
     container_name: portfolio
+    restart: always
+    environment:
+      - NODE_ENV=production
+    networks:
+      - app-network
+
+  makeitproduct:
+    build:
+      context: ../makeitproduct  # MakeItProduct projesinin yolu
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date +%Y%m%d_%H%M%S)}
+    container_name: makeitproduct
     restart: always
     environment:
       - NODE_ENV=production
