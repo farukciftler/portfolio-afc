@@ -387,4 +387,61 @@ header {
     .article-item:hover {
         transform: none;
     }
+}
+
+.certificate-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.certificate-item:last-child {
+    border-bottom: none;
+}
+
+.certificate-item h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.certificate-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.certificate-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certificate-item a:hover {
+    text-decoration: underline;
+}
+
+.certificate-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.skill-tag {
+    background-color: #f8f8f8;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #333;
+    border: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .certificate-skills {
+        gap: 6px;
+    }
+    
+    .skill-tag {
+        font-size: 0.85em;
+        padding: 4px 10px;
+    }
 } 

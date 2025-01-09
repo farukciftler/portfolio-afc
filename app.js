@@ -42,6 +42,10 @@ app.get('/articles', (req, res) => {
     res.render('pages/articles', { page: 'articles' });
 });
 
+app.get('/certificates', (req, res) => {
+    res.render('pages/certificates', { page: 'certificates' });
+});
+
 app.listen(port, () => {
     console.log(`Portfolyo sitesi http://localhost:${port} adresinde çalışıyor`);
 }); 
