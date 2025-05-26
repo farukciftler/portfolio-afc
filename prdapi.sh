@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(hotelapi.makeitproduct.com)
+domains=(prdapi.makeitproduct.com)
 rsa_key_size=4096
 data_path="./nginx/certbot"
 email="ciftlerabdullah@gmail.com"
