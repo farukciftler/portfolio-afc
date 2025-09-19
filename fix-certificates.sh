@@ -4,11 +4,15 @@
 
 echo "=== Sertifika klasörlerini ve nginx config'lerini kontrol ediyorum ==="
 
-# Docker container'ında sertifika klasörlerini listele
+# Local sertifika klasörlerini listele
 echo "Mevcut sertifika klasörleri:"
-docker compose exec certbot sh -c "ls -1 /etc/letsencrypt/live/ | grep -v README" | while read cert_dir; do
-    echo "  - $cert_dir"
-done
+if [ -d "./nginx/certbot/conf/live" ]; then
+    ls -1 ./nginx/certbot/conf/live/ | grep -v README | while read cert_dir; do
+        echo "  - $cert_dir"
+    done
+else
+    echo "  Sertifika klasörü bulunamadı: ./nginx/certbot/conf/live"
+fi
 
 echo ""
 echo "Nginx config dosyalarını güncelliyorum..."
@@ -28,8 +32,8 @@ for conf_file in ./nginx/conf.d/*.conf; do
             if [ ! -z "$domain" ]; then
                 echo "  Domain: $domain"
 
-                # Docker container'ında gerçek sertifika klasörünü bul
-                actual_cert_dir=$(docker compose exec certbot sh -c "ls -1 /etc/letsencrypt/live/ | grep '^${domain}' | head -1")
+                # Local gerçek sertifika klasörünü bul
+                actual_cert_dir=$(ls -1 ./nginx/certbot/conf/live/ | grep "^${domain}" | head -1)
 
                 if [ ! -z "$actual_cert_dir" ]; then
                     echo "  Gerçek sertifika klasörü: $actual_cert_dir"
