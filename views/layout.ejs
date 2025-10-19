@@ -12,14 +12,20 @@
     </header>
     
     <nav>
-        <a href="/" class="<%= page === 'home' ? 'active' : '' %>">Home</a>
-        <a href="/experience" class="<%= page === 'experience' ? 'active' : '' %>">Experience</a>
-        <a href="/education" class="<%= page === 'education' ? 'active' : '' %>">Education</a>
-        <a href="/skills" class="<%= page === 'skills' ? 'active' : '' %>">Skills</a>
-        <a href="/projects" class="<%= page === 'projects' ? 'active' : '' %>">Projects</a>
-        <a href="/articles" class="<%= page === 'articles' ? 'active' : '' %>">Articles</a>
-        <a href="/certificates" class="<%= page === 'certificates' ? 'active' : '' %>">Certificates</a>
-        <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">Contact</a>
+        <div class="nav-left">
+            <a href="/" class="<%= page === 'home' ? 'active' : '' %>"><%- __('nav.home') %></a>
+            <a href="/experience" class="<%= page === 'experience' ? 'active' : '' %>"><%- __('nav.experience') %></a>
+            <a href="/education" class="<%= page === 'education' ? 'active' : '' %>"><%- __('nav.education') %></a>
+            <a href="/skills" class="<%= page === 'skills' ? 'active' : '' %>"><%- __('nav.skills') %></a>
+            <a href="/projects" class="<%= page === 'projects' ? 'active' : '' %>"><%- __('nav.projects') %></a>
+            <a href="/articles" class="<%= page === 'articles' ? 'active' : '' %>"><%- __('nav.articles') %></a>
+            <a href="/certificates" class="<%= page === 'certificates' ? 'active' : '' %>"><%- __('nav.certificates') %></a>
+            <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>"><%- __('nav.contact') %></a>
+        </div>
+        <div class="nav-right">
+            <a href="/lang/tr" class="<%= res.getLocale() === 'tr' ? 'active' : '' %>">TR</a>
+            <a href="/lang/en" class="<%= res.getLocale() === 'en' ? 'active' : '' %>">EN</a>
+        </div>
     </nav>
     
     <main>

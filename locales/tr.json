@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "experience": "Deneyim",
+    "education": "Eğitim",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "articles": "Makaleler",
+    "certificates": "Sertifikalar",
+    "contact": "İletişim"
+  },
+  "home": {
+    "title": "Abdullah Faruk Çiftler",
+    "description": "Yazılım geliştirme geçmişine sahip, deneyimli ve sonuç odaklı Ürün Yöneticisi. AI entegrasyonu, yol haritası planlaması ve tam ürün yaşam döngüsü sahipliği konularında uzman. Çapraz fonksiyonel ekipleri yönetme, iş akışlarını optimize etme ve iş büyümesini sağlama konusunda kanıtlanmış yetkinlik. Başarılı bir startup'ın kurucusu. İngilizce ve Türkçe akıcı konuşuyor.",
+    "location": "Konum",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "linkedin": "LinkedIn",
+    "portfolio": "Portföy"
+  },
+  "experience": {
+    "title": "İş Deneyimi",
+    "boyner": {
+      "title": "Senior Product Manager, Boyner",
+      "description": "PM/PO ekipleri için makine öğrenimi girişimlerini yönlendirme, yol haritası zekası ve teslimat analitiği. Insider, Power BI, SAP Finance ve Dynamics 365 ile AI entegrasyonu yaparak CRM ve çok kanallı performansı optimize etme. Jira analitiği için özel Python motoru geliştirme, liderliğe uygulanabilir içgörüler sunma. Şu anda Boyner'ın dolandırıcılık motoru dönüşümünü denetleme."
+    },
+    "stratezy": {
+      "title": "Kurucu & Ürün Lideri, Stratezy (AI Roadmap SaaS)",
+      "description": "Ürün ekipleri için AI destekli yol haritası ve PRD otomasyon platformu geliştirme. Tüm sistemi uçtan uca tasarlama ve geliştirme — arka uç (NestJS, MongoDB), ön uç (Vue) ve DevOps (Docker, Nginx, VPS) dahil. Hikaye puanı tahmini, sprint süresi tahmini ve PRD puanlama için çok aşamalı makine öğrenimi modelleri uygulama. Jira ve Confluence API entegrasyonu ile otomatik yol haritası zekası. stratezy.net'te canlı demo başlatma."
+    },
+    "jury": {
+      "title": "Jüri Üyesi, Medeniyet Üniversitesi Proje Değerlendirme Komitesi",
+      "description": "Akademik/teknoloji projelerini yenilikçilik, uygulanabilirlik ve etki açısından değerlendirme. Finansman kararlarına katkıda bulunma ve R&D ekiplerine rehberlik etme."
+    },
+    "makeitproduct": {
+      "title": "Kurucu & CEO, MakeItProduct (Freelance)",
+      "description": "Postuby ve New Mind gibi firmalara danışmanlık. Ürün dokümantasyonu, UI/UX geri bildirimi, iş stratejisi ve SRS spesifikasyonları sunma. Teknoloji parklarındaki teknoloji firmalarına finansman rehberliği ve operasyonel iyileştirmelerle destek olma."
+    },
+    "wugo": {
+      "title": "Ürün Yöneticisi, Wugo",
+      "description": "Etkinlik keşif uygulamasında kullanıcı etkileşimi ve elde tutmayı iyileştirme. Özellik yol haritası teslim etme ve ürün pazar uyumunu genişletme."
+    },
+    "pep": {
+      "title": "Kıdemli Yazılım Geliştirici, PeP (FinTech)",
+      "description": "Arka uç API entegrasyonlarını ve mikro hizmetler geçişini yönetme. Finansal iş akışları için düzenleyici uyumluluk ve performans optimizasyonu sağlama."
+    },
+    "newmind": {
+      "title": "Yazılım Geliştirici, New Mind",
+      "description": ".NET/PHP API'leri tasarlama, yasal teknoloji platformları için mikro hizmetler uygulama. Raporlama verimliliğini iyileştirme."
+    },
+    "locup": {
+      "title": "CEO, Locup Dijital Etkinlik Çözümleri",
+      "description": "Etkinlik yönetimi SaaS startup'ı kurma ve çıkarma. Mimari, pazarlama ve operasyonları yönetme. Pitch deck burada mevcut."
+    },
+    "inveon": {
+      "title": "Junior Geliştirici, INVEON",
+      "description": "ASP.NET API'leri ve Docker ortamları geliştirme. MVC framework kullanarak sosyal platform oluşturma."
+    }
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "technical": "Teknik",
+    "project_management": "Proje Yönetimi",
+    "analytics": "Analitik",
+    "communication": "İletişim"
+  },
+  "education": {
+    "title": "Eğitim",
+    "ytu": "Yıldız Teknik Üniversitesi - Elektrik Mühendisliği",
+    "iu": "İstanbul Üniversitesi - Ekonometri",
+    "selected_project": "Seçilmiş Proje",
+    "smart_plug": {
+      "title": "Otonom Enerji Yönetimi için Akıllı Priz Tasarımı",
+      "description": "Cihaz sınıflandırması ve enerji optimizasyonu için ML destekli akıllı priz geliştirme. TÜBİTAK tarafından desteklendi. Konferans makalesi burada."
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "languages": "Diller",
+    "references": "Referanslar"
+  },
+  "projects": {
+    "title": "Projeler"
+  },
+  "articles": {
+    "title": "Makaleler"
+  },
+  "certificates": {
+    "title": "Sertifikalar"
+  }
+}

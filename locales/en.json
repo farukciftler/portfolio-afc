@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "articles": "Articles",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Abdullah Faruk Çiftler",
+    "description": "Experienced and results-driven Product Manager with a background in software development, specializing in leading innovative solutions across various industries. Skilled in AI integration, roadmap planning, and full lifecycle product ownership. Proven ability to lead cross-functional teams, streamline workflows, and drive business growth. Founder of a successful startup. Fluent in English and Turkish.",
+    "location": "Location",
+    "email": "Email",
+    "phone": "Phone",
+    "linkedin": "LinkedIn",
+    "portfolio": "Portfolio"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "boyner": {
+      "title": "Senior Product Manager, Boyner",
+      "description": "Driving machine-learning initiatives for PRD automation, roadmap intelligence, and delivery analytics across PM/PO teams. Integrating AI with Insider, Power BI, SAP Finance, and Dynamics 365 to optimize CRM and omnichannel performance. Built a custom Python engine for Jira analytics, delivering actionable insights to leadership. Currently overseeing Boyner's fraud engine transformation."
+    },
+    "stratezy": {
+      "title": "Founder & Product Lead, Stratezy (AI Roadmap SaaS)",
+      "description": "Developing an AI-powered roadmap and PRD automation platform for product teams. Designed and built the entire system — including backend (NestJS, MongoDB), frontend (Vue), and DevOps (Docker, Nginx, VPS) — fully end-to-end. Implemented multi-stage machine learning models for story point prediction, sprint duration forecasting, and PRD scoring using Python and LLM pipelines. Integrated Jira and Confluence APIs for automated roadmap intelligence. Launched live demo on stratezy.net."
+    },
+    "jury": {
+      "title": "Jury Member, Medeniyet University Project Evaluation Committee",
+      "description": "Evaluating academic/tech projects for innovation, feasibility, and impact. Contributing to funding decisions and guiding R&D teams."
+    },
+    "makeitproduct": {
+      "title": "Founder & CEO, MakeItProduct (Freelance)",
+      "description": "Consulting for firms like Postuby and New Mind. Delivering product documentation, UI/UX feedback, business strategy, and SRS specs. Supported tech firms in technoparks with funding guidance and operational improvements."
+    },
+    "wugo": {
+      "title": "Product Manager, Wugo",
+      "description": "Improved user engagement and retention in event discovery app. Delivered feature roadmap and expanded product market fit."
+    },
+    "pep": {
+      "title": "Senior Software Developer, PeP (FinTech)",
+      "description": "Led backend API integrations and microservices migration. Ensured regulatory compliance and performance optimization for financial workflows."
+    },
+    "newmind": {
+      "title": "Software Developer, New Mind",
+      "description": "Designed .NET/PHP APIs, implemented microservices for legal tech platforms. Improved reporting efficiency."
+    },
+    "locup": {
+      "title": "CEO, Locup Digital Event Solutions",
+      "description": "Founded and exited an event management SaaS startup. Managed architecture, marketing, operations. Pitch deck available here."
+    },
+    "inveon": {
+      "title": "Junior Developer, INVEON",
+      "description": "Built ASP.NET APIs and Dockerized environments. Created a social platform using MVC framework."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "technical": "Technical",
+    "project_management": "Project Management",
+    "analytics": "Analytics",
+    "communication": "Communication"
+  },
+  "education": {
+    "title": "Education",
+    "ytu": "Yıldız Technical University - Electrical Engineering",
+    "iu": "Istanbul University - Econometrics",
+    "selected_project": "Selected Project",
+    "smart_plug": {
+      "title": "Smart Plug Design for Autonomous Energy Management",
+      "description": "Developed ML-powered smart plug for device classification and energy optimization. Supported by TÜBİTAK. See conference paper here."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "languages": "Languages",
+    "references": "References"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "articles": {
+    "title": "Articles"
+  },
+  "certificates": {
+    "title": "Certificates"
+  }
+}

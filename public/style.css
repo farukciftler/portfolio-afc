@@ -13,8 +13,20 @@ nav {
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.nav-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 5px;
 }
 
 nav a {
@@ -342,11 +354,21 @@ header {
     }
 
     nav {
-        justify-content: center;
+        justify-content: space-between;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding: 5px 0;
         gap: 5px;
+    }
+
+    .nav-left {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex: 1;
+    }
+
+    .nav-right {
+        flex-shrink: 0;
     }
 
     nav a {
