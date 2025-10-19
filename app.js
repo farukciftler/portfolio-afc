@@ -39,34 +39,42 @@ app.get('/lang/:locale', (req, res) => {
 
 // Routes
 app.get('/', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('home', { page: 'home', __: res.__ });
 });
 
 app.get('/experience', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('experience', { page: 'experience', __: res.__ });
 });
 
 app.get('/education', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('education', { page: 'education', __: res.__ });
 });
 
 app.get('/skills', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('skills', { page: 'skills', __: res.__ });
 });
 
 app.get('/contact', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('contact', { page: 'contact', __: res.__ });
 });
 
 app.get('/projects', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('projects', { page: 'projects', __: res.__ });
 });
 
 app.get('/articles', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('articles', { page: 'articles', __: res.__ });
 });
 
 app.get('/certificates', (req, res) => {
+    res.locals.currentLocale = res.getLocale();
     res.render('certificates', { page: 'certificates', __: res.__ });
 });
 

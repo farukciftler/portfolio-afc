@@ -23,8 +23,8 @@
             <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>"><%- __('nav.contact') %></a>
         </div>
         <div class="nav-right">
-            <a href="/lang/tr" class="<%= res.getLocale() === 'tr' ? 'active' : '' %>">TR</a>
-            <a href="/lang/en" class="<%= res.getLocale() === 'en' ? 'active' : '' %>">EN</a>
+            <a href="/lang/tr" class="<%= currentLocale === 'tr' ? 'active' : '' %>">TR</a>
+            <a href="/lang/en" class="<%= currentLocale === 'en' ? 'active' : '' %>">EN</a>
         </div>
     </nav>
     
