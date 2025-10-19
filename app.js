@@ -15,35 +15,35 @@ app.use(express.static('public'));
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('pages/home', { page: 'home' });
+    res.render('home', { page: 'home' });
 });
 
 app.get('/experience', (req, res) => {
-    res.render('pages/experience', { page: 'experience' });
+    res.render('experience', { page: 'experience' });
 });
 
 app.get('/education', (req, res) => {
-    res.render('pages/education', { page: 'education' });
+    res.render('education', { page: 'education' });
 });
 
 app.get('/skills', (req, res) => {
-    res.render('pages/skills', { page: 'skills' });
+    res.render('skills', { page: 'skills' });
 });
 
 app.get('/contact', (req, res) => {
-    res.render('pages/contact', { page: 'contact' });
+    res.render('contact', { page: 'contact' });
 });
 
 app.get('/projects', (req, res) => {
-    res.render('pages/projects', { page: 'projects' });
+    res.render('projects', { page: 'projects' });
 });
 
 app.get('/articles', (req, res) => {
-    res.render('pages/articles', { page: 'articles' });
+    res.render('articles', { page: 'articles' });
 });
 
 app.get('/certificates', (req, res) => {
-    res.render('pages/certificates', { page: 'certificates' });
+    res.render('certificates', { page: 'certificates' });
 });
 
 app.listen(port, () => {
