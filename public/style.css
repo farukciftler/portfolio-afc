@@ -29,12 +29,12 @@ nav {
     align-items: center;
 }
 
-/* Language Toggle Switch */
+/* Language Toggle Switch - Analog Style */
 .language-toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 30px;
+    width: 70px;
+    height: 35px;
 }
 
 .language-toggle input {
@@ -50,78 +50,95 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 30px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-    overflow: hidden;
+    background: #f8f8f8;
+    border: 2px solid #e0e0e0;
+    border-radius: 35px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 0 10px;
+    font-family: 'Courier New', monospace;
 }
 
 .toggle-slider:before {
     position: absolute;
     content: "";
-    height: 22px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
     left: 4px;
     bottom: 4px;
-    background: white;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 1px solid #d0d0d0;
     border-radius: 50%;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
     z-index: 2;
 }
 
 .toggle-text {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    color: #666;
     transition: all 0.3s ease;
     z-index: 1;
     user-select: none;
+    font-family: 'Courier New', monospace;
 }
 
 .toggle-slider .toggle-text:first-child {
     opacity: 1;
-    transform: translateX(0);
+    color: #333;
 }
 
 .toggle-slider .toggle-text:last-child {
-    opacity: 0.7;
-    transform: translateX(0);
+    opacity: 0.6;
+    color: #999;
 }
 
 input:checked + .toggle-slider {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-    box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+    background: #f0f0f0;
+    border-color: #ccc;
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.15),
+        0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 input:checked + .toggle-slider:before {
-    transform: translateX(30px);
-    background: white;
+    transform: translateX(35px);
+    background: linear-gradient(145deg, #e6e6e6, #cccccc);
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 input:checked + .toggle-slider .toggle-text:first-child {
-    opacity: 0.7;
-    transform: translateX(-4px);
+    opacity: 0.6;
+    color: #999;
 }
 
 input:checked + .toggle-slider .toggle-text:last-child {
     opacity: 1;
-    transform: translateX(-4px);
+    color: #333;
 }
 
 .toggle-slider:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    border-color: #bbb;
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 input:checked + .toggle-slider:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    border-color: #aaa;
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.15),
+        0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .toggle-slider:active:before {
@@ -129,7 +146,7 @@ input:checked + .toggle-slider:hover {
 }
 
 input:checked + .toggle-slider:active:before {
-    transform: translateX(30px) scale(0.95);
+    transform: translateX(35px) scale(0.95);
 }
 
 nav a {
@@ -177,8 +194,18 @@ h1, h2 {
 }
 
 header {
-    text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .site-title {
@@ -427,6 +454,12 @@ header {
         margin: 10px;
     }
 
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
     .site-title {
         font-size: 1.7em;
     }
@@ -491,36 +524,27 @@ header {
     }
 
     .language-toggle {
-        width: 55px;
-        height: 28px;
-    }
-
-    .toggle-slider {
-        padding: 0 6px;
-        box-shadow: 0 2px 8px rgba(102, 126, 234, 0.25);
-    }
-
-    input:checked + .toggle-slider {
-        box-shadow: 0 2px 8px rgba(255, 107, 107, 0.25);
+        width: 65px;
+        height: 32px;
     }
 
     .toggle-slider:before {
-        height: 20px;
-        width: 20px;
-        left: 4px;
-        bottom: 4px;
+        height: 24px;
+        width: 24px;
+        left: 3px;
+        bottom: 3px;
     }
 
     input:checked + .toggle-slider:before {
-        transform: translateX(27px);
+        transform: translateX(32px);
     }
 
     input:checked + .toggle-slider:active:before {
-        transform: translateX(27px) scale(0.95);
+        transform: translateX(32px) scale(0.95);
     }
 
     .toggle-text {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     nav a {
@@ -635,31 +659,27 @@ header {
     }
 
     .language-toggle {
-        width: 50px;
-        height: 25px;
-    }
-
-    .toggle-slider {
-        padding: 0 5px;
+        width: 60px;
+        height: 30px;
     }
 
     .toggle-slider:before {
-        height: 17px;
-        width: 17px;
-        left: 4px;
-        bottom: 4px;
+        height: 22px;
+        width: 22px;
+        left: 3px;
+        bottom: 3px;
     }
 
     input:checked + .toggle-slider:before {
-        transform: translateX(24px);
+        transform: translateX(30px);
     }
 
     input:checked + .toggle-slider:active:before {
-        transform: translateX(24px) scale(0.95);
+        transform: translateX(30px) scale(0.95);
     }
 
     .toggle-text {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
 
