@@ -23,13 +23,25 @@
             <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>"><%- __('nav.contact') %></a>
         </div>
         <div class="nav-right">
-            <a href="/lang/tr" class="<%= currentLocale === 'tr' ? 'active' : '' %>">TR</a>
-            <a href="/lang/en" class="<%= currentLocale === 'en' ? 'active' : '' %>">EN</a>
+            <div class="language-toggle">
+                <input type="checkbox" id="lang-toggle" <%= currentLocale === 'en' ? 'checked' : '' %> onchange="changeLanguage(this.checked)">
+                <label for="lang-toggle" class="toggle-slider">
+                    <span class="toggle-text">TR</span>
+                    <span class="toggle-text">EN</span>
+                </label>
+            </div>
         </div>
     </nav>
     
     <main>
         <%- body %>
     </main>
+
+    <script>
+        function changeLanguage(isEnglish) {
+            const newLang = isEnglish ? 'en' : 'tr';
+            window.location.href = '/lang/' + newLang;
+        }
+    </script>
 </body>
 </html> 
