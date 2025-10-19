@@ -1,25 +1,36 @@
 {
-  "nav": {
-    "home": "Home",
-    "experience": "Experience",
-    "education": "Education",
-    "skills": "Skills",
-    "projects": "Projects",
-    "articles": "Articles",
-    "certificates": "Certificates",
-    "contact": "Contact"
-  },
-  "home": {
-    "title": "Abdullah Faruk Çiftler",
-    "description": "Experienced and results-driven Product Manager with a background in software development, specializing in leading innovative solutions across various industries. Skilled in AI integration, roadmap planning, and full lifecycle product ownership. Proven ability to lead cross-functional teams, streamline workflows, and drive business growth. Founder of a successful startup. Fluent in English and Turkish.",
-    "location": "Location",
-    "email": "Email",
-    "phone": "Phone",
-    "linkedin": "LinkedIn",
-    "portfolio": "Portfolio"
-  },
+	"nav": {
+		"home": "Home",
+		"experience": "Experience",
+		"education": "Education",
+		"skills": "Skills",
+		"projects": "Projects",
+		"articles": "Articles",
+		"certificates": "Certificates",
+		"contact": "Contact"
+	},
+	"home": {
+		"title": "Abdullah Faruk Çiftler",
+		"description": "Experienced and results-driven Product Manager with a background in software development, specializing in leading innovative solutions across various industries. Skilled in AI integration, roadmap planning, and full lifecycle product ownership. Proven ability to lead cross-functional teams, streamline workflows, and drive business growth. Founder of a successful startup. Fluent in English and Turkish.",
+		"location": "Location",
+		"email": "Email",
+		"phone": "Phone",
+		"linkedin": "LinkedIn",
+		"portfolio": "Portfolio"
+	},
   "experience": {
     "title": "Professional Experience",
+    "dates": {
+      "boyner": "January 2025 - Present",
+      "stratezy": "October 2024 - Present",
+      "jury": "August 2024 - Present",
+      "makeitproduct": "February 2022 - Present",
+      "wugo": "July 2023 - May 2024",
+      "pep": "November 2022 - July 2023",
+      "newmind": "March 2021 - January 2022",
+      "locup": "August 2020 - March 2023",
+      "inveon": "December 2019 - March 2021"
+    },
     "boyner": {
       "title": "Senior Product Manager, Boyner",
       "description": "Driving machine-learning initiatives for PRD automation, roadmap intelligence, and delivery analytics across PM/PO teams. Integrating AI with Insider, Power BI, SAP Finance, and Dynamics 365 to optimize CRM and omnichannel performance. Built a custom Python engine for Jira analytics, delivering actionable insights to leadership. Currently overseeing Boyner's fraud engine transformation."
@@ -57,35 +68,154 @@
       "description": "Built ASP.NET APIs and Dockerized environments. Created a social platform using MVC framework."
     }
   },
-  "skills": {
-    "title": "Skills",
-    "technical": "Technical",
-    "project_management": "Project Management",
-    "analytics": "Analytics",
-    "communication": "Communication"
-  },
+	"skills": {
+		"title": "Skills",
+		"technical": "Technical",
+		"project_management": "Project Management",
+		"analytics": "Analytics",
+		"communication": "Communication"
+	},
   "education": {
     "title": "Education",
-    "ytu": "Yıldız Technical University - Electrical Engineering",
-    "iu": "Istanbul University - Econometrics",
+    "dates": {
+      "ytu": "2016 - 2021",
+      "iu": "2024 - Present",
+      "smart_plug": "2018"
+    },
+    "ytu": {
+      "name": "Yıldız Technical University",
+      "degree": "Electrical Engineering, Bachelor's"
+    },
+    "iu": {
+      "name": "Istanbul University",
+      "degree": "Econometrics, Bachelor's"
+    },
     "selected_project": "Selected Project",
     "smart_plug": {
       "title": "Smart Plug Design for Autonomous Energy Management",
       "description": "Developed ML-powered smart plug for device classification and energy optimization. Supported by TÜBİTAK. See conference paper here."
     }
   },
-  "contact": {
-    "title": "Contact",
-    "languages": "Languages",
-    "references": "References"
-  },
-  "projects": {
-    "title": "Projects"
-  },
-  "articles": {
-    "title": "Articles"
-  },
-  "certificates": {
-    "title": "Certificates"
-  }
+	"contact": {
+		"title": "Contact",
+		"languages": {
+			"title": "Languages",
+			"english": {
+				"name": "English",
+				"level": "Advanced (C1)"
+			},
+			"turkish": {
+				"name": "Turkish",
+				"level": "Native"
+			},
+			"arabic": {
+				"name": "Arabic",
+				"level": "Intermediate (B1)"
+			},
+			"bosnian": {
+				"name": "Bosnian",
+				"level": "Beginner (A1)"
+			}
+		},
+		"references": {
+			"title": "References",
+			"cise": {
+				"name": "Cise Ayhan",
+				"position": "MakeItProduct Client",
+				"email": "ciseayhan@gmail.com",
+				"phone": "+90 530 325 88 09"
+			},
+			"ali": {
+				"name": "Prof. Dr. Ali Polat",
+				"position": "Consultant, New Mind Systems",
+				"email": "apolat@hotmail.com",
+				"phone": "+90 505 114 78 20"
+			}
+		}
+	},
+	"projects": {
+		"title": "Projects",
+		"stratezy": {
+			"title": "Stratezy - AI Roadmap SaaS Platform",
+			"description": "AI-powered roadmap and PRD automation platform for product teams. Built end-to-end using NestJS, MongoDB, Vue.js and DevOps (Docker, Nginx, VPS).",
+			"technologies": "Technologies:",
+			"tech_list": "NestJS, MongoDB, Vue.js, Python, LLM APIs, Jira API, Confluence API"
+		},
+		"locup": {
+			"title": "Locup - Digital Event Management SaaS",
+			"description": "Event management startup. As founder and CTO, I was responsible for architecture, marketing, and operations.",
+			"technologies": "Technologies:",
+			"tech_list": "Startup Development, Business Strategy, Operations",
+			"pitch_deck": "Pitch Deck"
+		},
+		"smart_plug": {
+			"title": "Smart Plug for Autonomous Energy Management",
+			"description": "ML-powered smart plug design for device classification and energy optimization. Supported by TÜBİTAK.",
+			"technologies": "Technologies:",
+			"tech_list": "Machine Learning, IoT, Energy Management",
+			"paper": "Conference Paper"
+		}
+	},
+	"articles": {
+		"title": "Articles",
+		"categories": {
+			"ai_product": "AI and Product Management",
+			"technical": "Technical Articles"
+		},
+		"ai_optimization": {
+			"title": "Optimizing Product Development Processes with AI",
+			"description": "A comprehensive analysis of the integration of AI technologies into product development processes and the efficiency gains they bring.",
+			"date": "Published: 2024",
+			"read_more": "Read More →"
+		},
+		"ai_agile": {
+			"title": "AI Integration in Agile Methodologies",
+			"description": "How AI tools can be used in agile working methods and their impact on team dynamics.",
+			"date": "Published: 2024",
+			"read_more": "Read More →"
+		},
+		"microservices": {
+			"title": "Scalable Systems with Microservices Architecture",
+			"description": "Advantages of microservices approach in modern software systems and implementation strategies.",
+			"date": "Published: 2023",
+			"read_more": "Read More →"
+		},
+		"docker": {
+			"title": "Standardizing Development Environment with Docker",
+			"description": "Methods for creating consistent development environments using container technologies.",
+			"date": "Published: 2023",
+			"read_more": "Read More →"
+		}
+	},
+	"certificates": {
+		"title": "Certificates",
+		"cert_number": "Certificate No:",
+		"validity": "Validity:",
+		"google_cloud": {
+			"title": "Google Cloud Professional Cloud Architect",
+			"description": "Expert-level cloud architecture certification on Google Cloud Platform.",
+			"number": "123456789",
+			"validity_period": "2024-2027"
+		},
+		"cspo": {
+			"title": "Certified Scrum Product Owner (CSPO)",
+			"description": "Product owner certification issued by Scrum Alliance.",
+			"number": "CSPO-789456",
+			"validity_period": "Ongoing"
+		},
+		"aws": {
+			"title": "AWS Certified Solutions Architect",
+			"description": "Amazon Web Services solutions architecture certification.",
+			"number": "AWS-456789",
+			"validity_period": "2023-2026"
+		},
+		"azure_ai": {
+			"title": "Microsoft Certified: Azure AI Engineer Associate",
+			"description": "Azure AI engineering expertise.",
+			"number": "AZ-500123",
+			"validity_period": "2024-2027"
+		}
+	},
+	"nav.home": "nav.home",
+	"home.title": "home.title"
 }

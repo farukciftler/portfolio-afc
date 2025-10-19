@@ -1,25 +1,36 @@
 {
-  "nav": {
-    "home": "Ana Sayfa",
-    "experience": "Deneyim",
-    "education": "Eğitim",
-    "skills": "Yetenekler",
-    "projects": "Projeler",
-    "articles": "Makaleler",
-    "certificates": "Sertifikalar",
-    "contact": "İletişim"
-  },
-  "home": {
-    "title": "Abdullah Faruk Çiftler",
-    "description": "Yazılım geliştirme geçmişine sahip, deneyimli ve sonuç odaklı Ürün Yöneticisi. AI entegrasyonu, yol haritası planlaması ve tam ürün yaşam döngüsü sahipliği konularında uzman. Çapraz fonksiyonel ekipleri yönetme, iş akışlarını optimize etme ve iş büyümesini sağlama konusunda kanıtlanmış yetkinlik. Başarılı bir startup'ın kurucusu. İngilizce ve Türkçe akıcı konuşuyor.",
-    "location": "Konum",
-    "email": "E-posta",
-    "phone": "Telefon",
-    "linkedin": "LinkedIn",
-    "portfolio": "Portföy"
-  },
+	"nav": {
+		"home": "Ana Sayfa",
+		"experience": "Deneyim",
+		"education": "Eğitim",
+		"skills": "Yetenekler",
+		"projects": "Projeler",
+		"articles": "Makaleler",
+		"certificates": "Sertifikalar",
+		"contact": "İletişim"
+	},
+	"home": {
+		"title": "Abdullah Faruk Çiftler",
+		"description": "Yazılım geliştirme geçmişine sahip, deneyimli ve sonuç odaklı Ürün Yöneticisi. AI entegrasyonu, yol haritası planlaması ve tam ürün yaşam döngüsü sahipliği konularında uzman. Çapraz fonksiyonel ekipleri yönetme, iş akışlarını optimize etme ve iş büyümesini sağlama konusunda kanıtlanmış yetkinlik. Başarılı bir startup'ın kurucusu. İngilizce ve Türkçe akıcı konuşuyor.",
+		"location": "Konum",
+		"email": "E-posta",
+		"phone": "Telefon",
+		"linkedin": "LinkedIn",
+		"portfolio": "Portföy"
+	},
   "experience": {
     "title": "İş Deneyimi",
+    "dates": {
+      "boyner": "Ocak 2025 - Günümüz",
+      "stratezy": "Ekim 2024 - Günümüz",
+      "jury": "Ağustos 2024 - Günümüz",
+      "makeitproduct": "Şubat 2022 - Günümüz",
+      "wugo": "Temmuz 2023 - Mayıs 2024",
+      "pep": "Kasım 2022 - Temmuz 2023",
+      "newmind": "Mart 2021 - Ocak 2022",
+      "locup": "Ağustos 2020 - Mart 2023",
+      "inveon": "Aralık 2019 - Mart 2021"
+    },
     "boyner": {
       "title": "Senior Product Manager, Boyner",
       "description": "PM/PO ekipleri için makine öğrenimi girişimlerini yönlendirme, yol haritası zekası ve teslimat analitiği. Insider, Power BI, SAP Finance ve Dynamics 365 ile AI entegrasyonu yaparak CRM ve çok kanallı performansı optimize etme. Jira analitiği için özel Python motoru geliştirme, liderliğe uygulanabilir içgörüler sunma. Şu anda Boyner'ın dolandırıcılık motoru dönüşümünü denetleme."
@@ -57,35 +68,154 @@
       "description": "ASP.NET API'leri ve Docker ortamları geliştirme. MVC framework kullanarak sosyal platform oluşturma."
     }
   },
-  "skills": {
-    "title": "Yetenekler",
-    "technical": "Teknik",
-    "project_management": "Proje Yönetimi",
-    "analytics": "Analitik",
-    "communication": "İletişim"
-  },
+	"skills": {
+		"title": "Yetenekler",
+		"technical": "Teknik",
+		"project_management": "Proje Yönetimi",
+		"analytics": "Analitik",
+		"communication": "İletişim"
+	},
   "education": {
     "title": "Eğitim",
-    "ytu": "Yıldız Teknik Üniversitesi - Elektrik Mühendisliği",
-    "iu": "İstanbul Üniversitesi - Ekonometri",
+    "dates": {
+      "ytu": "2016 - 2021",
+      "iu": "2024 - Devam Ediyor",
+      "smart_plug": "2018"
+    },
+    "ytu": {
+      "name": "Yıldız Teknik Üniversitesi",
+      "degree": "Elektrik Mühendisliği, Lisans"
+    },
+    "iu": {
+      "name": "İstanbul Üniversitesi",
+      "degree": "Ekonometri, Lisans"
+    },
     "selected_project": "Seçilmiş Proje",
     "smart_plug": {
       "title": "Otonom Enerji Yönetimi için Akıllı Priz Tasarımı",
       "description": "Cihaz sınıflandırması ve enerji optimizasyonu için ML destekli akıllı priz geliştirme. TÜBİTAK tarafından desteklendi. Konferans makalesi burada."
     }
   },
-  "contact": {
-    "title": "İletişim",
-    "languages": "Diller",
-    "references": "Referanslar"
-  },
-  "projects": {
-    "title": "Projeler"
-  },
-  "articles": {
-    "title": "Makaleler"
-  },
-  "certificates": {
-    "title": "Sertifikalar"
-  }
+	"contact": {
+		"title": "İletişim",
+		"languages": {
+			"title": "Diller",
+			"english": {
+				"name": "İngilizce",
+				"level": "İleri Seviye (C1)"
+			},
+			"turkish": {
+				"name": "Türkçe",
+				"level": "Anadil"
+			},
+			"arabic": {
+				"name": "Arapça",
+				"level": "Orta Seviye (B1)"
+			},
+			"bosnian": {
+				"name": "Boşnakça",
+				"level": "Başlangıç (A1)"
+			}
+		},
+		"references": {
+			"title": "Referanslar",
+			"cise": {
+				"name": "Cise Ayhan",
+				"position": "MakeItProduct Müşterisi",
+				"email": "ciseayhan@gmail.com",
+				"phone": "+90 530 325 88 09"
+			},
+			"ali": {
+				"name": "Prof. Dr. Ali Polat",
+				"position": "Danışman, New Mind Systems",
+				"email": "apolat@hotmail.com",
+				"phone": "+90 505 114 78 20"
+			}
+		}
+	},
+	"projects": {
+		"title": "Projeler",
+		"stratezy": {
+			"title": "Stratezy - AI Roadmap SaaS Platform",
+			"description": "Ürün ekipleri için AI destekli yol haritası ve PRD otomasyon platformu. NestJS, MongoDB, Vue.js ve DevOps (Docker, Nginx, VPS) kullanarak uçtan uca geliştirildi.",
+			"technologies": "Teknolojiler:",
+			"tech_list": "NestJS, MongoDB, Vue.js, Python, LLM API'leri, Jira API, Confluence API"
+		},
+		"locup": {
+			"title": "Locup - Dijital Etkinlik Yönetimi SaaS",
+			"description": "Etkinlik yönetimi startup'ı. Kurucusu ve CTO olarak mimari, pazarlama ve operasyonlardan sorumluydum.",
+			"technologies": "Teknolojiler:",
+			"tech_list": "Startup Development, Business Strategy, Operations",
+			"pitch_deck": "Pitch Deck"
+		},
+		"smart_plug": {
+			"title": "Otonom Enerji Yönetimi için Akıllı Priz",
+			"description": "ML destekli akıllı priz tasarımı. TÜBİTAK tarafından desteklendi.",
+			"technologies": "Teknolojiler:",
+			"tech_list": "Machine Learning, IoT, Energy Management",
+			"paper": "Konferans Makalesi"
+		}
+	},
+	"articles": {
+		"title": "Makaleler",
+		"categories": {
+			"ai_product": "AI ve Ürün Yönetimi",
+			"technical": "Teknik Yazılar"
+		},
+		"ai_optimization": {
+			"title": "Yapay Zeka ile Ürün Geliştirme Süreçlerini Optimize Etmek",
+			"description": "Yapay zeka teknolojilerinin ürün geliştirme süreçlerine entegrasyonu ve getirdiği verimlilik kazanımları hakkında kapsamlı bir analiz.",
+			"date": "Yayın tarihi: 2024",
+			"read_more": "Devamını Oku →"
+		},
+		"ai_agile": {
+			"title": "Agile Metodolojilerde AI Entegrasyonu",
+			"description": "Agile çalışma yöntemlerinde yapay zeka araçlarının nasıl kullanılabileceği ve takım dinamiklerine etkisi.",
+			"date": "Yayın tarihi: 2024",
+			"read_more": "Devamını Oku →"
+		},
+		"microservices": {
+			"title": "Microservices Mimarisi ile Ölçeklenebilir Sistemler",
+			"description": "Modern yazılım sistemlerinde microservices yaklaşımının avantajları ve implementasyon stratejileri.",
+			"date": "Yayın tarihi: 2023",
+			"read_more": "Devamını Oku →"
+		},
+		"docker": {
+			"title": "Docker ile Geliştirme Ortamı Standardizasyonu",
+			"description": "Container teknolojileri kullanarak tutarlı geliştirme ortamları oluşturma yöntemleri.",
+			"date": "Yayın tarihi: 2023",
+			"read_more": "Devamını Oku →"
+		}
+	},
+	"certificates": {
+		"title": "Sertifikalar",
+		"cert_number": "Sertifika No:",
+		"validity": "Geçerlilik:",
+		"google_cloud": {
+			"title": "Google Cloud Professional Cloud Architect",
+			"description": "Google Cloud Platform'da uzmanlık düzeyinde bulut mimarisi sertifikası.",
+			"number": "123456789",
+			"validity_period": "2024-2027"
+		},
+		"cspo": {
+			"title": "Certified Scrum Product Owner (CSPO)",
+			"description": "Scrum Alliance tarafından verilen ürün sahibi sertifikası.",
+			"number": "CSPO-789456",
+			"validity_period": "Sürekli"
+		},
+		"aws": {
+			"title": "AWS Certified Solutions Architect",
+			"description": "Amazon Web Services çözümleri mimarisi sertifikası.",
+			"number": "AWS-456789",
+			"validity_period": "2023-2026"
+		},
+		"azure_ai": {
+			"title": "Microsoft Certified: Azure AI Engineer Associate",
+			"description": "Azure yapay zeka mühendisliği uzmanlığı.",
+			"number": "AZ-500123",
+			"validity_period": "2024-2027"
+		}
+	},
+	"nav.home": "nav.home",
+	"home.title": "home.title"
 }
