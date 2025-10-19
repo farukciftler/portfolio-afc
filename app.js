@@ -29,7 +29,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('layout', 'layout');
 
-// Middleware - Locale yönetimi
+// Middleware
+app.use(cookieParser());
+
+// Locale yönetimi middleware
 app.use((req, res, next) => {
     // Cookie'den veya query'den locale al
     let locale = req.cookies.lang || req.query.lang || 'tr';
@@ -47,7 +50,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(cookieParser());
 app.use(expressLayouts);
 app.use(express.static('public'));
 
